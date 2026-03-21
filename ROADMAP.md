@@ -56,8 +56,7 @@ This system provides developer access management for enterprise environments, fe
 - [ ] Set up AWS infrastructure with Terraform
   - [ ] Create Terraform project structure
   - [ ] Configure AWS provider
-  - [ ] Set up S3 for static hosting
-  - [ ] Configure CloudFront distribution
+  - [ ] Configure Amplify for frontend hosting
   - [ ] Set up DynamoDB tables (users, sessions)
   - [ ] Configure Cognito User Pool (or alternative auth provider)
   - [ ] Set up IAM roles and policies
