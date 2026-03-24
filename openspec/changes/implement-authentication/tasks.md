@@ -60,10 +60,10 @@
 
 - [x] 7.1 Set `NEXTAUTH_URL` to `http://localhost:3000` for local development
 - [x] 7.2 Generate `NEXTAUTH_SECRET` using `openssl rand -base64 32`
-- [ ] 7.3 Get Cognito User Pool ID from Terraform outputs
-- [ ] 7.4 Get Cognito App Client ID from Terraform outputs
-- [ ] 7.5 Get Cognito Domain from Terraform outputs
-- [ ] 7.6 Populate all values in `.env.local`
+- [x] 7.3 Get Cognito User Pool ID from Terraform outputs: `eu-north-1_g3ouwfuXS`
+- [x] 7.4 Get Cognito App Client ID from Terraform outputs: `1jbql3a0l3169v5d3k7h7thuid`
+- [x] 7.5 Get Cognito Domain from Terraform outputs: `access-manager-auth.auth.eu-north-1.amazoncognito.com`
+- [x] 7.6 Populate all values in `.env.local`
 - [x] 7.7 Verify application starts without environment errors
 
 ## 8. Testing and Verification
