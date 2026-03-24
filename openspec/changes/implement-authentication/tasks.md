@@ -4,7 +4,8 @@
 - [x] 1.2 Install required peer dependencies if any
 - [x] 1.3 Create `.env.local` file with placeholder Cognito configuration
 - [x] 1.4 Add `.env.local` to `.gitignore` (if not already present)
-- [ ] 1.5 Verify Cognito App Client callback URLs include `http://localhost:3000/api/auth/callback/cognito`
+- [x] 1.5 Verify Cognito App Client callback URLs include `http://localhost:3000/api/auth/callback/cognito`
+  - Configured in terraform.tfvars: `["http://localhost:3000/api/auth/callback/cognito"]`
 
 ## 2. NextAuth Configuration
 
@@ -92,7 +93,7 @@
 - [x] 10.1 Build application: `npm run build`
 - [x] 10.2 Fix any build errors
 - [x] 10.3 Create `.env.example` with placeholder values (for documentation)
-- [ ] 10.4 Document required environment variables in README
+- [x] 10.4 Document required environment variables in README
 - [ ] 10.5 Update Cognito App Client callback URLs for production domain
 - [ ] 10.6 Set environment variables in Amplify console
 - [ ] 10.7 Deploy to Amplify and verify auth flow in production
@@ -101,7 +102,7 @@
 ## 11. Documentation
 
 - [x] 11.1 Add authentication section to project README
-- [ ] 11.2 Document Cognito configuration requirements
-- [ ] 11.3 Document environment variables needed
-- [ ] 11.4 Add troubleshooting section for common auth issues
-- [ ] 11.5 Document how to add new protected routes
+- [x] 11.2 Document Cognito configuration requirements
+- [x] 11.3 Document environment variables needed
+- [x] 11.4 Add troubleshooting section for common auth issues
+- [x] 11.5 Document how to add new protected routes
