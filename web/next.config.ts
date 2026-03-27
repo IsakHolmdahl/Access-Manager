@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // WEB_COMPUTE platform supports API routes natively
+  // No output: 'export' needed - standard Next.js output works
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

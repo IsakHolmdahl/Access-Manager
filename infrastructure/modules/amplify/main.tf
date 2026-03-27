@@ -5,7 +5,8 @@
 resource "aws_amplify_app" "main" {
   name       = var.app_name
   repository = var.repository_url != "" ? var.repository_url : null
-  
+  platform   = "WEB_COMPUTE" # Supports Next.js API routes as Lambda functions
+
   # OAuth token for repository access
   access_token = var.access_token != "" ? var.access_token : null
 
@@ -40,10 +41,11 @@ resource "aws_amplify_app" "main" {
   # Environment variables
   environment_variables = var.environment_variables
 
-  # Custom headers
+  # SPA routing: serve index.html for client-side navigation
+  # With WEB_COMPUTE, API routes go to Lambda, static pages are served via CDN
   custom_rule {
     source = "/<*>"
-    status = "404"
+    status = "404-200"
     target = "/index.html"
   }
 
